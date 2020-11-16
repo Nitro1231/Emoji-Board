@@ -10,11 +10,13 @@ let mainWindow
 
 function createWindow() {
   mainWindow = new BrowserWindow({
-    width: 720,
-    height: 500,
+    width: 320,
+    height: 520,
+    minWidth: 300,
+    minHeight: 500,
     frame: false,
     transparent: true,
-    resizable: false
+    resizable: true
   })
   mainWindow.setMaximizable(false)
   mainWindow.loadURL(
